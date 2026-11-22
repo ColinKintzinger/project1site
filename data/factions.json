@@ -1,0 +1,339 @@
+{
+  "title": "Warhammer 40,000 Roleplay Factions",
+  "description": "Faction reference for a Warhammer 40k tabletop roleplaying campaign: lore, playstyle, goals and troop types.",
+  "categories": [
+    {
+      "id": "xenos",
+      "name": "Xenos",
+      "about": "Alien species that the Imperium considers abominations to be purged. Each pursues its own ancient agenda, and many predate humanity by millions of years.",
+      "factions": [
+        {
+          "id": "necrons",
+          "name": "Necrons",
+          "about": "An ancient race of skeletal androids who once ruled the galaxy as the Necrontyr. After trading their flesh for undying metal bodies, they slept for sixty million years in stasis-tombs. Now their dynasties are awakening to reclaim the stars.",
+          "lore": [
+            "The Necrontyr were short-lived beings who allied with the star-gods known as the C'tan, who transferred their minds into living metal through biotransference.",
+            "During the Great Sundering the Necrons turned on the C'tan, shattering them into countless shards that are now bound as weapons.",
+            "Most rank-and-file Necrons lost their minds in the process; only the nobility retained their full personalities.",
+            "Many tomb worlds awoke damaged, leaving some Necron lords insane, such as those afflicted by the Flayer Virus."
+          ],
+          "playstyle": "Slow, relentless and extremely durable. Necron forces advance steadily, shrug off damage, and repair fallen warriors through Reanimation Protocols. In a roleplay setting they suit cold, calculating, aristocratic characters bound by ancient codes of honor.",
+          "goals": [
+            "Reclaim their lost empire and the worlds they once ruled",
+            "Restore the dynasties and their former glory",
+            "Some nobles seek a way to return to flesh bodies",
+            "Eliminate the threat of the Tyranids and other upstart races"
+          ],
+          "troops": [
+            { "name": "Necron Warriors", "role": "Core infantry armed with gauss flayers that strip targets apart atom by atom." },
+            { "name": "Immortals", "role": "Elite line troops who kept more of their minds and wield gauss blasters or tesla carbines." },
+            { "name": "Lychguard", "role": "Bodyguards of the nobility, armed with warscythes or hyperphase swords." },
+            { "name": "Crypteks", "role": "Techno-sorcerers who command the forces of physics and time." },
+            { "name": "Overlords and Lords", "role": "Noble commanders who lead the dynasties." },
+            { "name": "Canoptek Constructs", "role": "Scarabs, Wraiths and Spyders that maintain the tomb worlds." },
+            { "name": "Flayed Ones", "role": "Insane Necrons cursed with a hunger for flesh." },
+            { "name": "C'tan Shards", "role": "Enslaved fragments of star-gods unleashed as living weapons." }
+          ]
+        },
+        {
+          "id": "orks",
+          "name": "Orks",
+          "about": "A brutal, green-skinned warrior race that lives for battle. Orks are the most widespread xenos species in the galaxy, and when gathered in vast numbers under a mighty warboss they form a WAAAGH! capable of overrunning entire sectors.",
+          "lore": [
+            "Orks were engineered as soldiers by the ancient Old Ones for their war against the Necrons.",
+            "Orks reproduce by spores, meaning that wherever they fight, more Orks eventually grow.",
+            "Their collective psychic field makes their beliefs real: a vehicle painted red really does go faster.",
+            "Orks grow larger and stronger the more they fight, and leadership goes to the biggest and toughest."
+          ],
+          "playstyle": "Loud, aggressive and chaotic. Orks overwhelm enemies with numbers and close-combat fury, backed by ramshackle but surprisingly effective technology. In a roleplay setting they reward bold, reckless and humorous characters who solve problems by charging at them.",
+          "goals": [
+            "Find the biggest, best fight possible",
+            "Loot shiny gear and better weapons (and teef, the Ork currency)",
+            "Grow bigger and climb the hierarchy to become a Warboss",
+            "Launch a WAAAGH! across the stars"
+          ],
+          "troops": [
+            { "name": "Boyz", "role": "The core mob of Ork infantry, fighting with choppas and sluggas." },
+            { "name": "Gretchin (Grots)", "role": "Small, cowardly servants used as fodder and labor." },
+            { "name": "Nobz", "role": "Bigger, tougher Orks who boss the Boyz around." },
+            { "name": "Warboss", "role": "The biggest and meanest Ork, leader of the warband." },
+            { "name": "Meks", "role": "Instinctive engineers who build guns, vehicles and gadgets." },
+            { "name": "Painboyz", "role": "Crude surgeons who perform 'enhancements' on other Orks." },
+            { "name": "Weirdboyz", "role": "Ork psykers who channel the raw energy of the WAAAGH!" },
+            { "name": "Stormboyz", "role": "Jump-pack troops who launch themselves into battle." },
+            { "name": "Speed Freeks", "role": "Bikers and buggy drivers obsessed with going fast." },
+            { "name": "Deff Dreads and Killa Kans", "role": "Walking war machines piloted by Orks or Grots." }
+          ]
+        },
+        {
+          "id": "tau",
+          "name": "T'au Empire",
+          "about": "A young, technologically advanced and expansionist empire that believes in the 'Greater Good'. The T'au unite their own castes and many conquered or allied alien races under a single philosophy of cooperation and shared purpose.",
+          "lore": [
+            "T'au society is divided into five castes: Fire (warriors), Earth (builders), Water (diplomats), Air (pilots) and the mysterious Ethereals who lead them all.",
+            "The T'au have almost no presence in the Warp, making them highly resistant to psychic and daemonic influence.",
+            "Their empire grew in only a few thousand years, a heartbeat compared to other races.",
+            "Commander Farsight broke away from the Empire after discovering secrets about the Ethereals, forming the Farsight Enclaves."
+          ],
+          "playstyle": "Ranged, tactical and highly coordinated. T'au rely on superior firepower, markerlights, drones and battlesuits, avoiding melee whenever possible. In a roleplay setting they suit diplomats, idealists and disciplined soldiers who believe in a cause greater than themselves.",
+          "goals": [
+            "Spread the Greater Good across the galaxy",
+            "Bring other races into the empire through diplomacy or force",
+            "Advance their technology and expand through Spheres of Expansion",
+            "Protect T'au worlds from the Imperium, Tyranids and Chaos"
+          ],
+          "troops": [
+            { "name": "Fire Warriors", "role": "Core infantry armed with long-range pulse rifles and carbines." },
+            { "name": "Pathfinders", "role": "Scouts who mark targets with markerlights for the rest of the army." },
+            { "name": "Stealth Suits", "role": "Cloaked battlesuits used for infiltration and harassment." },
+            { "name": "Crisis Battlesuits", "role": "Versatile jet-pack battlesuits piloted by elite Fire caste warriors." },
+            { "name": "Broadsides", "role": "Heavy battlesuits carrying anti-armor railguns and missile systems." },
+            { "name": "Riptide and Stormsurge", "role": "Massive battlesuits and walking gun platforms." },
+            { "name": "Drones", "role": "Artificially intelligent support units providing shields, guns and sensors." },
+            { "name": "Ethereals", "role": "Spiritual leaders whose presence inspires all T'au." },
+            { "name": "Kroot", "role": "Avian mercenary auxiliaries who excel at close combat and tracking." },
+            { "name": "Vespid Stingwings", "role": "Insectoid auxiliaries who fly into battle with neutron blasters." }
+          ]
+        },
+        {
+          "id": "tyranids",
+          "name": "Tyranids",
+          "about": "An extragalactic swarm of bio-engineered horrors that devours all biological matter in its path. Directed by a single gestalt consciousness called the Hive Mind, Tyranid Hive Fleets strip entire worlds to bare rock.",
+          "lore": [
+            "Tyranids arrived from beyond the galaxy in vast Hive Fleets such as Behemoth, Kraken and Leviathan.",
+            "Every Tyranid organism is a tool of the Hive Mind, adapted to a specific purpose.",
+            "Genestealers infiltrate worlds ahead of the fleets, creating Genestealer Cults that weaken planets from within.",
+            "The Hive Mind casts a 'Shadow in the Warp' that blocks psychic communication and terrifies psykers.",
+            "After consuming a world, the Tyranids digest all its biomass in pools, leaving it lifeless."
+          ],
+          "playstyle": "Overwhelming swarms supported by giant monstrous creatures. Tyranids constantly adapt to their enemies and rely on synapse creatures to keep the lesser beasts in line. In a roleplay setting they are best used as a terrifying antagonist, or for horror-themed campaigns built around survival.",
+          "goals": [
+            "Consume all biomass in the galaxy",
+            "Adapt and evolve by absorbing the genetic traits of prey",
+            "Expand the Hive Fleets to new worlds",
+            "Eliminate psychic resistance and threats to the swarm"
+          ],
+          "troops": [
+            { "name": "Termagants and Hormagaunts", "role": "Swarms of small, expendable creatures that fight at range or in melee." },
+            { "name": "Rippers", "role": "Tiny worm-like creatures that consume everything in their path." },
+            { "name": "Tyranid Warriors", "role": "Mid-sized synapse creatures that lead the swarm." },
+            { "name": "Genestealers", "role": "Fast, deadly infiltrators with razor-sharp claws." },
+            { "name": "Lictors", "role": "Camouflaged stalker-assassins that hunt prey ahead of the swarm." },
+            { "name": "Zoanthropes", "role": "Floating psychic creatures that blast enemies with Warp energy." },
+            { "name": "Carnifexes", "role": "Living battering rams built to smash armor and fortifications." },
+            { "name": "Hive Tyrants", "role": "Massive synaptic leaders that channel the will of the Hive Mind." },
+            { "name": "Trygons and Mawlocs", "role": "Burrowing monsters that ambush from below the ground." },
+            { "name": "Hierophants and Bio-Titans", "role": "Colossal war-beasts used in the largest invasions." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chaos",
+      "name": "Chaos",
+      "about": "The Chaos Gods are entities of the Warp born from the emotions of mortals. Their followers include traitor Space Marines, cultists, mutants and daemons, all seeking to corrupt or destroy the Imperium. The four great powers are Khorne, Tzeentch, Nurgle and Slaanesh.",
+      "factions": [
+        {
+          "id": "khorne",
+          "name": "Khorne",
+          "about": "The Blood God and Lord of Skulls, Khorne is the Chaos God of rage, war, bloodshed and martial honor. He cares not from where the blood flows, only that it flows.",
+          "lore": [
+            "Khorne sits upon a Brass Throne atop a mountain of skulls in his realm within the Warp.",
+            "He despises sorcery and psykers, seeing magic as the coward's weapon.",
+            "The World Eaters Legion, led by the Daemon Primarch Angron, is Khorne's most devoted Traitor Legion.",
+            "Khorne is the eternal enemy of Slaanesh, as rage and excess are opposed.",
+            "His followers shout the cry 'Blood for the Blood God! Skulls for the Skull Throne!'"
+          ],
+          "playstyle": "Pure close-combat aggression. Khornate forces charge headlong into melee, gaining strength as they kill and refusing to use psychic powers. In a roleplay setting they suit berserkers, warrior-champions and characters driven by fury or a hunger for honorable combat.",
+          "goals": [
+            "Spill as much blood as possible in Khorne's name",
+            "Collect skulls for the Skull Throne",
+            "Prove themselves through combat against worthy foes",
+            "Earn daemonhood through endless slaughter"
+          ],
+          "troops": [
+            { "name": "Khorne Berzerkers", "role": "Frenzied Chaos Space Marines who live only to kill in melee." },
+            { "name": "World Eaters", "role": "The Traitor Legion devoted to Khorne." },
+            { "name": "Bloodletters", "role": "Lesser daemons of Khorne armed with hellblades." },
+            { "name": "Flesh Hounds", "role": "Daemonic hunting beasts immune to sorcery." },
+            { "name": "Bloodcrushers", "role": "Bloodletters riding brass-and-iron Juggernauts." },
+            { "name": "Bloodthirsters", "role": "Greater Daemons of Khorne, towering winged killers." },
+            { "name": "Skulltakers", "role": "Champions who gather skulls of mighty foes." },
+            { "name": "Cultists of Khorne", "role": "Mortal followers who fight in bloody mobs." }
+          ]
+        },
+        {
+          "id": "tzeentch",
+          "name": "Tzeentch",
+          "about": "The Changer of Ways and Architect of Fate, Tzeentch is the Chaos God of change, hope, ambition, sorcery and scheming. His plots are so complex that even failure may be part of his plan.",
+          "lore": [
+            "Tzeentch dwells within the Crystal Labyrinth, an ever-shifting maze within the Warp.",
+            "The Thousand Sons Legion, led by the Daemon Primarch Magnus the Red, serves Tzeentch.",
+            "Ahriman's Rubric of Ahriman turned most of the Thousand Sons into dust-filled suits of armor.",
+            "Tzeentch is the opposite of Nurgle, since change opposes stagnation.",
+            "His followers are often sorcerers seeking forbidden knowledge or power."
+          ],
+          "playstyle": "Psychic and ranged warfare built around sorcery and trickery. Tzeentchian forces rely on powerful psykers, warpfire and manipulation of fate. In a roleplay setting they suit schemers, sorcerers, manipulators and ambitious characters seeking knowledge at any price.",
+          "goals": [
+            "Gain forbidden knowledge and secrets",
+            "Manipulate events and people across the galaxy",
+            "Bring change and upheaval to stable systems",
+            "Ascend to daemonhood through mastery of sorcery"
+          ],
+          "troops": [
+            { "name": "Thousand Sons", "role": "The Traitor Legion of sorcerers devoted to Tzeentch." },
+            { "name": "Rubric Marines", "role": "Soulless warriors bound in armor, firing warpflame bolts." },
+            { "name": "Scarab Occult Terminators", "role": "Elite Terminator-armored Rubricae." },
+            { "name": "Sorcerers", "role": "Powerful psykers who command the Warp." },
+            { "name": "Pink and Blue Horrors", "role": "Lesser daemons who split apart when slain." },
+            { "name": "Flamers of Tzeentch", "role": "Daemons who spew multi-colored warpfire." },
+            { "name": "Screamers", "role": "Flying shark-like daemons that soar through the Warp." },
+            { "name": "Lords of Change", "role": "Greater Daemons of Tzeentch, bird-like masters of sorcery." },
+            { "name": "Tzaangors", "role": "Beastman-like mutants devoted to Tzeentch." }
+          ]
+        },
+        {
+          "id": "nurgle",
+          "name": "Nurgle",
+          "about": "Grandfather Nurgle is the Chaos God of disease, decay, despair and rebirth. Surprisingly jovial, he loves his followers and gifts them with plagues that make them immune to pain and fear of death.",
+          "lore": [
+            "Nurgle tends his Garden of Nurgle within the Warp, brewing new plagues in his great cauldron.",
+            "The Death Guard Legion, led by the Daemon Primarch Mortarion, serves Nurgle.",
+            "Nurgle offers comfort to those who despair over their mortality.",
+            "His followers are bloated, rotting and nearly unkillable.",
+            "Nurgle and Tzeentch are bitter rivals, as decay opposes change."
+          ],
+          "playstyle": "Slow, tough and grinding attrition warfare. Nurgle forces are extremely durable and spread disease to weaken enemies over time. In a roleplay setting they suit resilient, grim, oddly cheerful or fatalistic characters who embrace endurance.",
+          "goals": [
+            "Spread plagues and disease across the galaxy",
+            "Expand the Garden of Nurgle into reality",
+            "Bring despair and decay to the living",
+            "Show mortals the 'gift' of Nurgle's love"
+          ],
+          "troops": [
+            { "name": "Death Guard", "role": "The Traitor Legion devoted to Nurgle." },
+            { "name": "Plague Marines", "role": "Rotting Chaos Space Marines with toxic weapons." },
+            { "name": "Blightlord Terminators", "role": "Elite Terminators of the Death Guard." },
+            { "name": "Poxwalkers", "role": "Zombie-like victims of the Walking Pox." },
+            { "name": "Plaguebearers", "role": "Lesser daemons who count every disease in the galaxy." },
+            { "name": "Nurglings", "role": "Small, mischievous daemon mites." },
+            { "name": "Plague Drones", "role": "Plaguebearers riding giant Rot Flies." },
+            { "name": "Great Unclean Ones", "role": "Greater Daemons of Nurgle, massive and jovial." },
+            { "name": "Foetid Bloat-drones", "role": "Daemon engines that spread plague clouds." }
+          ]
+        },
+        {
+          "id": "slaanesh",
+          "name": "Slaanesh",
+          "about": "The Dark Prince of Excess, Slaanesh is the Chaos God of pleasure, perfection, pride and indulgence. Born from the decadence of the ancient Aeldari, Slaanesh drives followers to push every sensation to its extreme.",
+          "lore": [
+            "Slaanesh was born from the Fall of the Aeldari, an event that shattered their ancient empire.",
+            "Slaanesh hungers for Aeldari souls above all others.",
+            "The Emperor's Children Legion, led by the Daemon Primarch Fulgrim, serves Slaanesh.",
+            "Followers chase perfection and sensation, often ending in madness.",
+            "Slaanesh is the youngest of the four great Chaos Gods."
+          ],
+          "playstyle": "Fast, precise and deadly. Slaaneshi forces rely on speed, agility and perfectionist skill, often striking first. In a roleplay setting they suit proud duelists, artists, perfectionists and characters driven by obsession or ego.",
+          "goals": [
+            "Seek perfection in every skill and pursuit",
+            "Indulge in ever-greater sensation and experience",
+            "Claim the souls of the Aeldari",
+            "Rise to daemonhood through excellence"
+          ],
+          "troops": [
+            { "name": "Emperor's Children", "role": "The Traitor Legion devoted to Slaanesh." },
+            { "name": "Noise Marines", "role": "Chaos Space Marines with sonic weapons." },
+            { "name": "Daemonettes", "role": "Lesser daemons of Slaanesh, swift and deadly." },
+            { "name": "Seekers", "role": "Daemonettes riding fast Steeds of Slaanesh." },
+            { "name": "Fiends", "role": "Scorpion-like daemons that hypnotize their prey." },
+            { "name": "Keepers of Secrets", "role": "Greater Daemons of Slaanesh, graceful and terrifying." },
+            { "name": "Lord Kakophonist", "role": "Champion who leads Noise Marines with sound." },
+            { "name": "Cultists of Slaanesh", "role": "Mortal followers chasing excess." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "space-marines",
+      "name": "Space Marines",
+      "about": "The Adeptus Astartes are genetically engineered super-soldiers created by the Emperor of Mankind. Organized into Chapters of around 1,000 warriors, they are the Imperium's finest defenders, sent where the danger is greatest.",
+      "factions": [
+        {
+          "id": "adeptus-astartes",
+          "name": "Adeptus Astartes",
+          "about": "Each Space Marine is implanted with gene-seed derived from one of the Primarchs, the Emperor's genetically engineered sons. They wear power armor, wield bolters and fight without fear.",
+          "lore": [
+            "The original twenty Space Marine Legions were each led by a Primarch.",
+            "During the Horus Heresy, half the Legions turned to Chaos and betrayed the Emperor.",
+            "After the Heresy the loyal Legions were broken into smaller Chapters by the Codex Astartes, written by Roboute Guilliman.",
+            "Famous Chapters include the Ultramarines, Blood Angels, Dark Angels, Space Wolves and Imperial Fists.",
+            "The Primaris Marines, created by Belisarius Cawl, are a newer and stronger generation of Space Marine.",
+            "Space Marines receive 19 implanted organs, including a second heart and the Black Carapace that links them to their armor."
+          ],
+          "playstyle": "Elite, well-rounded and adaptable. Space Marines are few in number but extremely durable and skilled, capable of fighting at range or in melee. In a roleplay setting they suit heroic, disciplined and devoted characters who face overwhelming odds with honor.",
+          "goals": [
+            "Defend humanity and the Imperium from all threats",
+            "Serve the Emperor and uphold the honor of their Chapter",
+            "Destroy xenos, heretics and Chaos",
+            "Preserve their gene-seed and Chapter traditions"
+          ],
+          "troops": [
+            { "name": "Intercessors", "role": "Primaris line troops armed with bolt rifles." },
+            { "name": "Tactical Marines", "role": "Versatile classic Space Marine infantry." },
+            { "name": "Assault Marines", "role": "Jump-pack troops who strike in melee." },
+            { "name": "Devastator Marines", "role": "Heavy weapons specialists." },
+            { "name": "Scouts", "role": "Lightly armored recruits who infiltrate and snipe." },
+            { "name": "Terminators", "role": "Veterans in heavy Tactical Dreadnought armor." },
+            { "name": "Librarians", "role": "Psykers who wield the Warp for the Chapter." },
+            { "name": "Chaplains", "role": "Spiritual leaders who keep the faith and fervor of the Chapter." },
+            { "name": "Apothecaries", "role": "Medics who recover the gene-seed of fallen Marines." },
+            { "name": "Techmarines", "role": "Engineers trained by the Adeptus Mechanicus." },
+            { "name": "Dreadnoughts", "role": "War machines housing mortally wounded heroes." },
+            { "name": "Captains and Chapter Masters", "role": "Commanders of companies and Chapters." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imperium",
+      "name": "Imperium of Mankind",
+      "about": "The vast, galaxy-spanning empire of humanity ruled in the name of the God-Emperor, who sits upon the Golden Throne on Terra. It spans over a million worlds and is held together by faith, bureaucracy and endless war.",
+      "factions": [
+        {
+          "id": "imperium-of-man",
+          "name": "Imperium of Man",
+          "about": "The Imperium is ruled by the High Lords of Terra and countless institutions, from the Astra Militarum to the Inquisition. Billions of citizens toil and fight to protect humanity from the dangers of the galaxy.",
+          "lore": [
+            "The Emperor has been sustained on the Golden Throne for over ten thousand years after being mortally wounded by Horus.",
+            "The Astronomican, a psychic beacon powered by the Emperor, allows ships to navigate the Warp.",
+            "The Adeptus Mechanicus of Mars worship the Machine God and maintain the Imperium's technology.",
+            "The Inquisition hunts heretics, xenos and daemons, wielding near-absolute authority.",
+            "The Great Rift has split the galaxy, cutting the Imperium in half and leaving many worlds in darkness.",
+            "Roboute Guilliman has returned as Lord Commander of the Imperium and launched the Indomitus Crusade."
+          ],
+          "playstyle": "Massive numbers, heavy armor and diverse specialists. The Imperium's forces range from simple soldiers to towering Titans, relying on discipline, faith and firepower. In a roleplay setting this is the most flexible faction, suiting soldiers, Inquisitors, priests, tech-priests, rogue traders and ordinary citizens.",
+          "goals": [
+            "Protect humanity from xenos, heretics and Chaos",
+            "Serve and worship the God-Emperor",
+            "Maintain order and control across the Imperium",
+            "Reclaim lost worlds and technology"
+          ],
+          "troops": [
+            { "name": "Astra Militarum (Imperial Guard)", "role": "Billions of human soldiers armed with lasguns." },
+            { "name": "Commissars", "role": "Officers who enforce discipline and loyalty." },
+            { "name": "Tanks and Artillery", "role": "Leman Russ battle tanks, Basilisks and Baneblades." },
+            { "name": "Adepta Sororitas (Sisters of Battle)", "role": "Warrior nuns of the Ecclesiarchy armed with bolters and flamers." },
+            { "name": "Adeptus Mechanicus", "role": "Tech-priests, Skitarii and robotic war machines from Mars." },
+            { "name": "Imperial Knights", "role": "Towering walkers piloted by noble houses." },
+            { "name": "Titan Legions", "role": "Colossal god-machines that dominate the battlefield." },
+            { "name": "Adeptus Custodes", "role": "The Emperor's golden guardians, even mightier than Space Marines." },
+            { "name": "Inquisitors", "role": "Agents who hunt threats to humanity." },
+            { "name": "Grey Knights", "role": "Psychic Space Marines who fight daemons." },
+            { "name": "Officio Assassinorum", "role": "Elite assassins sent to eliminate key targets." },
+            { "name": "Rogue Traders", "role": "Explorers who travel beyond the Imperium's borders." }
+          ]
+        }
+      ]
+    }
+  ]
+}
