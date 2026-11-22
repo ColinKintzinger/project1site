@@ -470,3 +470,296 @@ section h3 {
     scroll-behavior: auto;
   }
 }
+
+/* ==========================================================================
+   Dark mode (set by js/main.js as <html data-theme="dark">)
+   Backgrounds go deep navy-black, text goes white, and the navy accents
+   become a pale steel blue so borders and headings stay visible.
+   ========================================================================== */
+
+html[data-theme="dark"] {
+  --white: #0a1022;       /* page and panel backgrounds */
+  --text: #e8ebf3;
+  --muted: #b7bfd3;
+  --navy: #a9bcec;        /* borders, headings, links, dividers */
+  --navy-light: #d3ddf7;
+  --navy-dark: #04081a;
+  --navy-tint: #141d3a;
+  color-scheme: dark;
+}
+
+/* Parts that use navy as a solid background keep the real navy. */
+html[data-theme="dark"] .side-menu {
+  background: #0f1f45;
+  border-right-color: #a9bcec;
+  box-shadow: 4px 0 0 #0f1f45;
+}
+
+html[data-theme="dark"] .menu-list a,
+html[data-theme="dark"] .menu-toggle {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .menu-list a:hover,
+html[data-theme="dark"] .menu-toggle:hover {
+  background: #1f3570;
+}
+
+html[data-theme="dark"] .menu-list a[aria-current="page"] {
+  background: #04081a;
+  border-left-color: #a9bcec;
+}
+
+html[data-theme="dark"] .faction-category,
+html[data-theme="dark"] .read-more {
+  background: #0f1f45;
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .read-more:hover {
+  background: #1f3570;
+}
+
+html[data-theme="dark"] .jump-top:hover {
+  color: #0a1022;
+}
+
+/* ---------- Theme toggle button (bottom of the menu bar) ---------- */
+
+.theme-toggle {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: var(--menu-width);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1rem;
+  background: #081230;
+  color: #ffffff;
+  border: none;
+  border-top: 2px solid #1f3570;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.theme-toggle:hover {
+  background: #1f3570;
+}
+
+.theme-icon {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.side-menu:has(.menu:not([open])) .theme-toggle {
+  width: var(--menu-collapsed);
+}
+
+.side-menu:has(.menu:not([open])) .theme-label {
+  display: none;
+}
+
+/* Leave room so the last menu link isn't hidden under the button. */
+.menu-list {
+  padding-bottom: 4rem;
+}
+
+/* ---------- Home page slideshow ---------- */
+
+.slideshow {
+  position: relative;
+  height: 440px;
+  overflow: hidden;
+  background: var(--navy-dark);
+}
+
+.slideshow:focus-visible {
+  outline-offset: -4px;
+}
+
+.slideshow .slide {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity 1s ease, transform 6s ease;
+}
+
+.slideshow .slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.slideshow .slide.is-broken {
+  display: none;
+}
+
+.slide-caption {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  margin: 0;
+  padding: 0.2rem 0.75rem;
+  background: #0f1f45;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.slide-controls button,
+.slide-dots button {
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background: rgba(15, 31, 69, 0.85);
+}
+
+.slide-controls button:hover,
+.slide-dots button:hover {
+  background: #1f3570;
+}
+
+.slide-prev,
+.slide-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  font-size: 1.2rem;
+}
+
+.slide-prev {
+  left: 0.75rem;
+}
+
+.slide-next {
+  right: 0.75rem;
+}
+
+.slide-pause {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 36px;
+  height: 36px;
+  font-size: 0.8rem;
+}
+
+.slide-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2.6rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.slide-dots button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border-width: 1px;
+  transform: rotate(45deg); /* diamond-shaped markers */
+}
+
+.slide-dots button.is-active {
+  background: #ffffff;
+}
+
+/* ---------- Scroll animations ---------- */
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--navy);
+  transform: scaleX(0);
+  transform-origin: left;
+  z-index: 20;
+  pointer-events: none;
+}
+
+/* Only elements that js/main.js tagged with .reveal start hidden,
+   so the page still shows everything if JavaScript is off. */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.lore-list li.reveal,
+.goals-list li.reveal {
+  transform: translateX(-24px);
+}
+
+.divider.reveal {
+  transform: scaleX(0.2);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .theme-toggle,
+  .side-menu:has(.menu:not([open])) .theme-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    width: auto;
+    height: 52px;
+    border-top: none;
+    border-left: 2px solid #1f3570;
+  }
+
+  .theme-toggle .theme-label {
+    display: none;
+  }
+
+  .menu-list {
+    padding-bottom: 0.75rem;
+  }
+
+  .slideshow {
+    height: 260px;
+  }
+
+  .slide-caption {
+    max-width: calc(100% - 4.5rem); /* stay clear of the pause button */
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+  }
+
+  .slide-prev,
+  .slide-next {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .slideshow .slide {
+    transition: none;
+  }
+}
