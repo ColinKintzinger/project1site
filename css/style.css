@@ -1,0 +1,472 @@
+/* ==========================================================================
+   Warhammer 40,000 Roleplay - site styles
+   Navy & white: navy menu bar, borders and dividers; white background,
+   black text. Gothic, Imperial-feeling type and framing.
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap");
+
+:root {
+  --navy: #0f1f45;
+  --navy-dark: #081230;
+  --navy-light: #1f3570;
+  --navy-tint: #eef1f8;
+  --white: #ffffff;
+  --text: #111111;
+  --muted: #3a3f4b;
+
+  --menu-width: 240px;
+  --menu-collapsed: 60px;
+
+  --font-heading: "Cinzel", "Times New Roman", serif;
+  --font-body: "Crimson Text", Georgia, serif;
+}
+
+/* ---------- Base ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--navy);
+}
+
+a:hover {
+  color: var(--navy-light);
+}
+
+:focus-visible {
+  outline: 3px solid var(--navy-light);
+  outline-offset: 3px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  color: var(--navy);
+  line-height: 1.2;
+}
+
+/* ---------- Side menu bar ---------- */
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--menu-width);
+  background: var(--navy);
+  color: var(--white);
+  border-right: 4px double var(--white);
+  box-shadow: 4px 0 0 var(--navy);
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  list-style: none;
+  border-bottom: 2px solid var(--navy-light);
+  user-select: none;
+}
+
+.menu-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.menu-toggle:hover {
+  background: var(--navy-light);
+}
+
+.menu-list,
+.menu-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list {
+  padding: 0.75rem 0;
+}
+
+.menu-list a {
+  display: block;
+  padding: 0.55rem 1.25rem;
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border-left: 4px solid transparent;
+}
+
+.menu-list a:hover {
+  background: var(--navy-light);
+  color: var(--white);
+}
+
+.menu-list a[aria-current="page"] {
+  border-left-color: var(--white);
+  background: var(--navy-dark);
+  font-weight: 700;
+}
+
+/* Group labels (Xenos, Chaos) */
+.menu-group {
+  margin-top: 0.5rem;
+}
+
+.menu-group > a {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+}
+
+.menu-group ul a {
+  padding-left: 2.25rem;
+  font-size: 0.9rem;
+}
+
+.menu-group ul a::before {
+  content: "\2720\00a0"; /* Maltese cross */
+  font-size: 0.75em;
+  opacity: 0.7;
+}
+
+/* Collapsed menu: only the toggle shows */
+.side-menu:has(.menu:not([open])) {
+  width: var(--menu-collapsed);
+}
+
+/* ---------- Page frame ---------- */
+
+.page {
+  margin-left: var(--menu-width);
+  max-width: 1100px;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+body:has(.menu:not([open])) .page {
+  margin-left: var(--menu-collapsed);
+}
+
+/* Jump to top */
+.jump-top {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 5;
+  padding: 0.4rem 0.9rem;
+  background: var(--white);
+  color: var(--navy);
+  border: 2px solid var(--navy);
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.jump-top:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+
+/* ---------- Hero image + title ---------- */
+
+.hero {
+  position: relative;
+  margin-bottom: 2.5rem;
+  border: 4px double var(--navy);
+  outline: 2px solid var(--navy);
+  outline-offset: 4px;
+  background: var(--navy-dark);
+}
+
+.hero-image {
+  width: 100%;
+  height: 440px;
+  object-fit: contain;
+  background: var(--navy-dark);
+}
+
+.hero-title {
+  position: absolute;
+  left: 50%;
+  bottom: -1.6rem;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0.5rem 2rem;
+  background: var(--white);
+  border: 3px solid var(--navy);
+  box-shadow: 0 0 0 4px var(--white), 0 0 0 6px var(--navy);
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.faction-category {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  margin: 0;
+  padding: 0.2rem 0.75rem;
+  background: var(--navy);
+  color: var(--white);
+  border: 1px solid var(--white);
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* ---------- Content sections ---------- */
+
+.about,
+.playstyle,
+.troops,
+.faction-cards {
+  padding: 1.5rem 2rem;
+  margin: 2.5rem 0;
+  border: 2px solid var(--navy);
+  border-left-width: 8px;
+}
+
+section h2 {
+  margin-top: 0;
+  padding-bottom: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--navy);
+}
+
+section h3 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+}
+
+/* Lore and goals lists with Imperial cross markers */
+.lore-list,
+.goals-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lore-list li,
+.goals-list li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.lore-list li::before,
+.goals-list li::before {
+  content: "\2720";
+  position: absolute;
+  left: 0;
+  color: var(--navy);
+}
+
+/* Troops as a grid of entries */
+.troops-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.troops-list li {
+  padding: 0.75rem 1rem;
+  background: var(--navy-tint);
+  border-left: 4px solid var(--navy);
+}
+
+.troops-list strong {
+  font-family: var(--font-heading);
+  color: var(--navy);
+}
+
+/* ---------- Navy divider ---------- */
+
+.divider {
+  height: 6px;
+  margin: 3rem 0;
+  border: none;
+  border-top: 4px solid var(--navy);
+  border-bottom: 1px solid var(--navy);
+  overflow: visible;
+  text-align: center;
+}
+
+.divider::after {
+  content: "\2720";
+  position: relative;
+  top: -1.05rem;
+  padding: 0 0.75rem;
+  background: var(--white);
+  color: var(--navy);
+  font-size: 1.4rem;
+}
+
+/* ---------- Xenos / Chaos faction cards ---------- */
+
+.faction-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.faction-cards > h2 {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
+.faction-card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--navy);
+  background: var(--white);
+}
+
+.faction-card-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 4px double var(--navy);
+}
+
+.faction-card h3 {
+  margin: 1rem 1rem 0.25rem;
+}
+
+.faction-card h3 a {
+  text-decoration: none;
+}
+
+.faction-card p {
+  margin: 0 1rem 1rem;
+  flex: 1;
+}
+
+.read-more {
+  display: block;
+  padding: 0.6rem 1rem;
+  background: var(--navy);
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.read-more:hover {
+  background: var(--navy-light);
+  color: var(--white);
+}
+
+/* ---------- Phones and small tablets ---------- */
+
+@media (max-width: 768px) {
+  .side-menu,
+  .side-menu:has(.menu:not([open])) {
+    position: sticky;
+    width: auto;
+    bottom: auto;
+    border-right: none;
+    border-bottom: 4px double var(--white);
+    box-shadow: 0 4px 0 var(--navy);
+  }
+
+  .menu-toggle {
+    justify-content: flex-start;
+    padding: 0 1rem;
+    height: 52px;
+  }
+
+  .menu-list {
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+
+  .page,
+  body:has(.menu:not([open])) .page {
+    margin-left: 0;
+    padding: 1.25rem 1rem;
+  }
+
+  .jump-top {
+    top: auto;
+    bottom: 1rem;
+  }
+
+  .hero-image {
+    height: 260px;
+  }
+
+  .hero-title {
+    white-space: normal;
+    width: max-content;
+    max-width: 90%;
+    padding: 0.4rem 1rem;
+  }
+
+  .about,
+  .playstyle,
+  .troops,
+  .faction-cards {
+    padding: 1rem;
+    border-left-width: 5px;
+  }
+
+  .faction-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
