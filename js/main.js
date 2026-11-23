@@ -85,7 +85,8 @@
     { file: "Chaos Gods.jpg", caption: "The Chaos Gods" },
     { file: "Khorne.jfif", caption: "Khorne" },
     { file: "Tzeentch.jpeg", caption: "Tzeentch" },
-    { file: "Nurgle.jpg", caption: "Nurgle" }
+    { file: "Nurgle.jpg", caption: "Nurgle" },
+    { file: "Slaanesh.png", caption: "Slaanesh" }
   ];
   var SLIDE_SECONDS = 5;
 
